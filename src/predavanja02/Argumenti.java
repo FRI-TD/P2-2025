@@ -3,7 +3,7 @@ package predavanja02;
 public class Argumenti {
 
   public static void main(String[] args) {
-    //args = new String[] {"x", "y"};
+    args = new String[] {"x", "y"};
 
     System.out.println("Stevilo argumentov: " + args.length);
     for (int i=0; i < args.length; i++) {
