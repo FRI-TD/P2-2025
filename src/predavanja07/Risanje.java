@@ -2,6 +2,8 @@ package predavanja07;
 
 import edu.princeton.cs.algs4.StdDraw;
 import java.awt.Color;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 
 public class Risanje {
 
@@ -108,36 +110,72 @@ public class Risanje {
     }
   }
 
+  static void kazalec(double kot, double dolzina, double debelina) {
+    StdDraw.setPenRadius(debelina);
+
+    double x = Math.cos(Math.toRadians(kot));
+    double y = Math.sin(Math.toRadians(kot));
+
+    StdDraw.line(0,0, x*dolzina, y*dolzina);
+  }
+
   static void ura() {
     StdDraw.setScale(-100,100);
+    StdDraw.enableDoubleBuffering();
 
-    double kot = 0;
-    for (int i=0; i<36; i++) {
-      double x1 = 80 * Math.cos(Math.toRadians(kot));
-      double y1 = 80 * Math.sin(Math.toRadians(kot));
-      double x2 = 85 * Math.cos(Math.toRadians(kot));
-      double y2 = 85 * Math.sin(Math.toRadians(kot));
+    while (true) {
+      StdDraw.clear(Color.white);
 
-      if (i % 3 == 0)
-        StdDraw.setPenRadius(0.03);
-      else
-        StdDraw.setPenRadius(0.003);
+      double kot = 0;
+      for (int i = 0; i < 60; i++) {
+        double x1 = 80 * Math.cos(Math.toRadians(kot));
+        double y1 = 80 * Math.sin(Math.toRadians(kot));
+        double x2 = 85 * Math.cos(Math.toRadians(kot));
+        double y2 = 85 * Math.sin(Math.toRadians(kot));
 
-      StdDraw.line(x1,y1,x2,y2);
+        StdDraw.setPenRadius(0.03 / (i % 5 == 0 ? 1 : 10));
+        //if (i % 5 == 0)
+        //  StdDraw.setPenRadius(0.03);
+        //else
+        //  StdDraw.setPenRadius(0.003);
 
-      kot = kot + 10;
+        StdDraw.line(x1, y1, x2, y2);
+
+        kot = kot + 6;
+      }
+
+      // izpis stevil
+      kot = 0;
+      for (int i = 1; i <= 12; i++) {
+        double x1 = 95 * Math.cos(Math.toRadians(60 - kot));
+        double y1 = 95 * Math.sin(Math.toRadians(60 - kot));
+
+        StdDraw.text(x1, y1, i + "");
+        kot += 30;
+      }
+
+      LocalTime now = LocalTime.now();
+      String cas = now.format(DateTimeFormatter.ofPattern("HH:mm:ss"));
+      StdDraw.text(-80, 90, cas);
+
+      double h = now.getHour();
+      double m = now.getMinute();
+      double s = now.getSecond();
+      double ss = now.getNano() / 10000000.0;
+      System.out.println(ss);
+
+      // urni kazalec
+      kazalec(90-(h + m/60)*30, 60, 0.03);
+
+      // minutni kazalec
+      kazalec(90-(m + s/60)*6, 70, 0.01);
+
+      // sekundni kazalec
+      kazalec(90-(s + ss/100)*6, 80, 0.005);
+
+      StdDraw.show();
+      StdDraw.pause(10);
     }
-
-    // izpis stevil
-    kot = 0;
-    for (int i = 1; i <= 12; i++) {
-      double x1 = 95 * Math.cos(Math.toRadians(60-kot));
-      double y1 = 95 * Math.sin(Math.toRadians(60-kot));
-
-      StdDraw.text(x1,y1, i+"");
-      kot += 30;
-    }
-
   }
 
   public static void main(String[] args) {
