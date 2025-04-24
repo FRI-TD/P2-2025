@@ -1,5 +1,6 @@
 package predavanja09;
 
+// StrokovnaKnjiga je Knjiga + kazalo pojmov (indeks)
 public class StrokovnaKnjiga extends Knjiga {
 
   private String index;

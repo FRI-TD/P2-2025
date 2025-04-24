@@ -1,5 +1,10 @@
 package predavanja09;
 
+/**
+ * V razredu definiramo metodo za računanje ničle
+ * poljubne odvedljive funkcije s pomočjo Newtnove
+ * iteracijske metode.
+ */
 public class Newton {
 
   static double poisciNiclo(Funkcija f, double x0, int n) {

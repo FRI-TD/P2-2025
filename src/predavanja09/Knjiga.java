@@ -1,5 +1,6 @@
 package predavanja09;
 
+// Knjiga z osnovnimi podatki (naslov, avtor, letoIzdaje)
 abstract public class Knjiga {
   private String naslov;
   private String avtor;

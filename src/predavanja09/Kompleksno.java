@@ -4,6 +4,7 @@ public class Kompleksno {
   private double re;// realna komponenta
   private double im;// imaginarna komponenta
 
+  // primer uporabe več konstruktorjev, ki se medsebojno kličejo
   public Kompleksno() {
     this.re = 0;
     this.im = 0;

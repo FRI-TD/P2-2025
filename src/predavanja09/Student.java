@@ -28,6 +28,7 @@ public class Student {
     status = "?";
   }
 
+  // metode "getter/setter" za vse atribute
   public String getIme() {
     return ime;
   }

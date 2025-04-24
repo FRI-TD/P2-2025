@@ -1,5 +1,8 @@
 package predavanja09;
 
+/**
+ * Program za demonstracijo delovanja razredov Knjiga, Leposlovje in StrokovnaKnjiga
+ */
 public class Knjiznica {
 
   public static void main(String[] args) {

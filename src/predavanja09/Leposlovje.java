@@ -1,5 +1,6 @@
 package predavanja09;
 
+// Leposlovje je Knjiga + tabela z mnenji bralcev
 public class Leposlovje extends Knjiga {
 
   String[] mnenjaBralcev;
