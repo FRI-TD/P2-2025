@@ -7,7 +7,7 @@ package predavanja09;
  */
 public class Newton {
 
-  static double poisciNiclo(Funkcija f, double x0, int n) {
+  public static double poisciNiclo(Funkcija f, double x0, int n) {
     for(int i=0; i<n; i++)
       x0 = x0 - f.vrednost(x0) / f.odvod(x0);
     return x0;

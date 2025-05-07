@@ -5,7 +5,7 @@ package predavanja09;
  * matematične "objekte", ki znajo izračunati vrednost pri danem x
  * in vrednost odvoda pri danem x
  */
-abstract public class Funkcija {
-  abstract double vrednost(double x);
-  abstract double odvod(double x);
+public abstract class Funkcija {
+  protected abstract double vrednost(double x);
+  protected abstract double odvod(double x);
 }
