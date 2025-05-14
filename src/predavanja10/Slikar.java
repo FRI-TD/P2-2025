@@ -3,6 +3,7 @@ package predavanja10;
 import edu.princeton.cs.algs4.StdDraw;
 
 import java.awt.*;
+import java.awt.event.KeyEvent;
 
 public class Slikar {
   static final int MAX_LIKI = 100;
@@ -36,18 +37,34 @@ public class Slikar {
           case '-': f      = 0.9; break;
         }
         for (int i = 0; i <stLikov ; i++) {
-          liki[i].premakni(deltaX, deltaY);
-          liki[i].spremeniVelikost(f);
+          if (liki[i].oznacen) {
+            liki[i].premakni(deltaX, deltaY);
+            liki[i].spremeniVelikost(f);
+          }
         }
 
       }
 
+      if (StdDraw.isMousePressed()) {
+        if (!StdDraw.isKeyPressed(KeyEvent.VK_SHIFT)) {
+          for (int i = 0; i < stLikov; i++) {
+            liki[i].oznacen = false;
+          }
+        }
 
-      // povecanje
-      // ..
+        double x = StdDraw.mouseX();
+        double y = StdDraw.mouseY();
+
+        for (int i = 0; i < stLikov; i++) {
+          if (liki[i].pripada(x,y))
+            liki[i].oznacen = true;
+        }
+      }
 
       for (int i = 0; i <stLikov ; i++) {
         liki[i].narisi();
+        if (liki[i].oznacen)
+          liki[i].narisiOznake();
       }
 
       StdDraw.show();

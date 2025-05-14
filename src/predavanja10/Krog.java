@@ -20,4 +20,14 @@ public class Krog extends Lik {
   void spremeniVelikost(double f) {
     this.r *= f;
   }
+
+  @Override
+  Obmocje getObmocjeLika() {
+    return new Obmocje(x-r, y+r, 2*r, 2*r);
+  }
+
+  @Override
+  boolean pripada(double x, double y) {
+    return Math.pow(this.x-x, 2) + Math.pow(this.y - y, 2) <= r*r;
+  }
 }

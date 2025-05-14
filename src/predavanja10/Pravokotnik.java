@@ -25,4 +25,14 @@ public class Pravokotnik extends Lik{
     this.a *= f;
     this.b *= f;
   }
+
+  @Override
+  Obmocje getObmocjeLika() {
+    return new Obmocje(x-a, y+b, 2*a, 2*b);
+  }
+
+  @Override
+  boolean pripada(double x, double y) {
+    return Math.abs(this.x - x) <= a  && Math.abs(this.y - y) <= b;
+  }
 }
