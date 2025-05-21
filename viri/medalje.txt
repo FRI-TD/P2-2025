@@ -1,0 +1,89 @@
+Kitajska	CHN	39	27	24	90
+Zdruzene drzave Amerike	USA	38	42	42	122
+Avstralija	AUS	18	18	14	50
+Japonska	JPN	18	12	13	43
+Francija	FRA	16	24	22	62
+Velika Britanija	GBR	14	22	27	63
+Nizozemska	NLD	14	7	12	33
+Juzna Koreja	KOR	13	8	9	30
+Nemcija	NEM	12	11	8	31
+Italija	ITA	11	13	15	39
+Kanada	CAN	9	7	11	27
+Nova Zelandija	NZL	9	7	2	18
+Madzarska	HUN	5	7	6	18
+Spanija	ESP	5	4	9	18
+Svedska	SWE	4	4	3	11
+Kenija	KEN	4	2	5	11
+Norveska	NOR	4	1	3	8
+Irska	IRL	4	0	3	7
+Brazilija	BRA	3	7	10	20
+Ukrajina	UKR	3	5	4	12
+Iran	IRN	3	5	2	10
+Romunija	ROU	3	4	1	8
+Gruzija	GEO	3	2	1	6
+Belgija	BEL	3	1	6	10
+Bolgarija	BUL	3	1	3	7
+Ceska	CZE	3	0	2	5
+Azerbajdzan	AZE	2	2	2	6
+Kuba	CUB	2	1	5	8
+Hrvaska	CRO	2	1	3	6
+Srbija	SRB	2	1	1	4
+Slovenija	SLO	2	1	0	3
+Kitajski Taipei	TPE	2	0	5	7
+Avstrija	AUT	2	0	3	5
+Hongkong	HKG	2	0	2	4
+Filipini	PHI	2	0	2	4
+Alzirija	ALG	2	0	1	3
+Indonezija	INA	2	0	1	3
+Izrael	ISR	1	5	1	7
+Poljska	POL	1	3	5	9
+Kazahstan	KAZ	1	3	3	7
+Jamajka	JAM	1	3	2	6
+Juzna Afrika	RSA	1	3	2	6
+Tajska	THA	1	3	2	6
+Etiopija	ETH	1	3	0	4
+Danska	DEN	1	2	5	8
+Svica	SUI	1	2	5	8
+Ekvador	ECU	1	2	2	5
+Portugalska	POR	1	2	1	4
+Grcija	GRE	1	1	6	8
+Argentina	ARG	1	1	1	3
+Bahrajn	BRN	1	1	1	3
+Egipt	EGY	1	1	1	3
+Tunizija	TUN	1	1	1	3
+Bocvana	BOT	1	1	0	2
+Cile	CHI	1	1	0	2
+Sveta Lucija	LCA	1	1	0	2
+Uganda	UGA	1	1	0	2
+Dominikanska republika	DOM	1	0	2	3
+Gvatemala	GUA	1	0	1	2
+Maroko	MAR	1	0	1	2
+Dominika	DMA	1	0	0	1
+Pakistan	PAK	1	0	0	1
+Turcija	TUR	0	3	5	8
+Mehika	MEX	0	3	2	5
+Armenija	ARM	0	3	1	4
+Kolumbija	COL	0	3	0	3
+Kirgizistan	KGZ	0	2	4	6
+Severna Koreja	PRK	0	2	4	6
+Litva	LTU	0	2	2	4
+Indija	IND	0	1	5	6
+Moldavija	MDA	0	1	3	4
+Kosovo	KOS	0	1	1	2
+Ciper	CYP	0	1	0	1
+Fidzi	FIJ	0	1	0	1
+Jordanija	JOR	0	1	0	1
+Mongolija	MGL	0	1	0	1
+Panama	PAN	0	1	0	1
+Tadzikistan	TJK	0	0	3	3
+Grenada	GRN	0	0	2	2
+Malezija	MAS	0	0	2	2
+Albanija	ALB	0	0	1	1
+Zelenortski otoki	CPV	0	0	1	1
+Slonokoscena obala	CIV	0	0	1	1
+Peru	PER	0	0	1	1
+Portoriko	PUR	0	0	1	1
+Katar	QAT	0	0	1	1
+Singapur	SIN	0	0	1	1
+Slovaska	SVK	0	0	1	1
+Zambija	ZAM	0	0	1	1
